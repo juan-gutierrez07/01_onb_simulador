@@ -1,0 +1,4 @@
+movistar\onb\libre\stepdefinitions\IngresoStepBasicDefinitions.class
+movistar\onb\libre\stepdefinitions\IngresoStepPremiumDefinitions.class
+movistar\onb\libre\runner\RunScenarioPremiumTest.class
+movistar\onb\libre\runner\RunScenarioBasicTest.class

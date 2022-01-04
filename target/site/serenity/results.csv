@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"El usuario quiere solicitar un credito de libre inversión con movistar libre","El usuario quiere simular la solicitud del credito","SUCCESS","2022-01-04T16:04:15.164-05:00[America/Bogota]","0.0","80.44"
+"El usuario premium quiere solicitar un credito de libre inversión con movistar libre","El usuario premium quiere simular la solicitud del credito","FAILURE","2022-01-04T16:05:44.182-05:00[America/Bogota]","0.0","77.01"

@@ -1,0 +1,8 @@
+movistar\onb\libre\utils\InputRange.class
+movistar\onb\libre\pageObject\PageBasic.class
+movistar\onb\libre\pageObject\PagePremium.class
+movistar\onb\libre\steps\IngresoSteps.class
+movistar\onb\libre\utils\Solicitud.class
+movistar\onb\libre\steps\Ingreso2Steps.class
+movistar\onb\libre\utils\ClickCuota.class
+movistar\onb\libre\utils\Datos.class
