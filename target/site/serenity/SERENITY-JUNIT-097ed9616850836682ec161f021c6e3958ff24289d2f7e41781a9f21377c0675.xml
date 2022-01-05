@@ -1,5 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="El usuario premium quiere solicitar un credito de libre inversión con movistar libre" skipped="0" tests="1" time="77.01" timestamp="2022-01-04 04:05:44"><testcase name="El usuario premium quiere simular la solicitud del credito"><failure message="expected:&lt;2[3,42]%&gt; but was:&lt;2[0,05]%&gt;" type="java.lang.AssertionError">expected:&lt;2[3,42]%&gt; but was:&lt;2[0,05]%&gt;</failure><system-err>expected:&lt;2[3,42]%&gt; but was:&lt;2[0,05]%&gt;&#13;
-movistar.onb.libre.steps.Ingreso2Steps.validarTEA(Ingreso2Steps.java:60)&#13;
-movistar.onb.libre.stepdefinitions.IngresoStepPremiumDefinitions.elUsuarioPremiumMirarLaTasaAnualEfectiva(IngresoStepPremiumDefinitions.java:55)&#13;
-✽.el usuario premium mirar la tasa anual efectiva(file:///C:/Users/jgutiepi/OneDrive%20-%20NTT%20DATA%20EMEAL/Escritorio/Proyectos%20Telefonica/01_ONB_LIBRE_SIMULADOR_FRONT/src/test/resources/scenarioPremium.feature:8)&#13;
-</system-err></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="El usuario premium quiere solicitar un credito de libre inversión con movistar libre" skipped="0" tests="1" time="51.18" timestamp="2022-01-05 11:02:19"><testcase name="El usuario premium quiere simular la solicitud del credito"/></testsuite>

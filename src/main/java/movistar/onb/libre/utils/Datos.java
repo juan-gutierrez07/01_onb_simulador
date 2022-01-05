@@ -27,7 +27,8 @@ public class Datos {
             for(int i =1; i <cant_sols; i++){
                 row = hoja.getRow(i);
                 Solicitud nueva = new Solicitud(row.getCell(0).getStringCellValue(),row.getCell(1).getNumericCellValue(),
-                                                (int)row.getCell(2).getNumericCellValue(),row.getCell(3).getNumericCellValue());
+                                                (int)row.getCell(2).getNumericCellValue(),row.getCell(3).getNumericCellValue(),
+                                                row.getCell(4).getNumericCellValue());
                 rows.add(nueva);
             }
 
@@ -38,62 +39,5 @@ public class Datos {
         return rows;
 
     }
-    /*
-    public List<String> urlCampaña(){
-        List<String> urls = new ArrayList<String>();
 
-        try {
-            this.file = new FileInputStream(new File("InsumosTest.xlsx"));
-            this.book = new XSSFWorkbook(file);
-            this.hoja = book.getSheet("DatosTest");
-            Row row;
-            for(int i =1; i<=2;i++){
-                row = hoja.getRow(i);
-                urls.add(row.getCell(0).getStringCellValue());
-            }
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-        return urls;
-    }
-
-    public List<Integer> cuotasSelect(){
-        List<Integer> cuotas = new ArrayList<Integer>();
-        try{
-            this.file = new FileInputStream(new File("InsumosTest.xlsx"));
-            this.book = new XSSFWorkbook(file);
-            this.hoja = book.getSheet("DatosTest");
-            Row row;
-            for(int i =1; i<=2;i++){
-                row = hoja.getRow(i);
-                if(row.getCell(2) != null){
-                    cuotas.add((int)row.getCell(2).getNumericCellValue());
-                }else{
-                    cuotas.add(0);
-                }
-            }
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-        return cuotas;
-    }
-    public List<Double> montos(){
-        List<Double> montos = new ArrayList<Double>();
-
-        try {
-            this.file = new FileInputStream(new File("InsumosTest.xlsx"));
-            this.book = new XSSFWorkbook(file);
-            this.hoja = book.getSheet("DatosTest");
-            Row row;
-            for(int i =1; i<=2;i++){
-                row = hoja.getRow(i);
-                montos.add(row.getCell(1).getNumericCellValue());
-            }
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-        return montos;
-    }
-
-*/
 }

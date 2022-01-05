@@ -28,11 +28,13 @@ public class IngresoSteps {
     }
     @Step
     public void seleccionarMontoBasic(){
-        double limit = 5500000;
+        double limit = dataUrls.solicitudesCampañas().get(1).getRange();
         while (dataUrls.solicitudesCampañas().get(1).getMonto()< limit){
             limit = limit-500000;
             page.getDriver().findElement(page.getInputMonto()).sendKeys(Keys.LEFT);
         }
+        double resultado = Double.parseDouble(page.getDriver().findElement(page.getTextMonto()).getText().replace("$","").replace(".","").replace(",","."));
+        Assert.assertEquals("el rango no se muestra bien ",dataUrls.solicitudesCampañas().get(1).getMonto()+"",resultado+"");
     }
     @Step
     public void validarCuotasBasic(){
@@ -43,7 +45,6 @@ public class IngresoSteps {
     }
     @Step
     public boolean selectCuotaBasic(){
-        System.out.println("Llegando a selectCuotaBasic..."+ solicituds.get(1).getCuota());
         if(solicituds.get(1).getCuota() >0){
             if(solicituds.get(1).getCuota() == 12 || solicituds.get(1).getCuota() == 24 || solicituds.get(1).getCuota() == 36){
                 for( WebElement i : this.hs){
@@ -59,7 +60,7 @@ public class IngresoSteps {
     }
     @Step
     public void validarTEA(){
-        Assert.assertEquals(page.getDriver().findElement(page.getTextTEA()).getText(), (dataUrls.solicitudesCampañas().get(1).getTasa_anual_ef()+"%").replace(".",","));
+        Assert.assertEquals((dataUrls.solicitudesCampañas().get(1).getTasa_anual_ef()+"%").replace(".",","),page.getDriver().findElement(page.getTextTEA()).getText());
     }
     @Step
     public void clickLoQuiero(){

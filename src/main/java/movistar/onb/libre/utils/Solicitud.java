@@ -6,11 +6,21 @@ public class Solicitud {
     private double monto;
     private int cuota;
     private double tasa_anual_ef;
-    public Solicitud(String url, double monto,int cuota,double tasa_anual_ef){
+    private double range;
+    public Solicitud(String url, double monto,int cuota,double tasa_anual_ef, double range){
         this.url= url;
         this.monto= monto;
         this.cuota= cuota;
         this.tasa_anual_ef = tasa_anual_ef;
+        this.range=range;
+    }
+
+    public double getRange() {
+        return range;
+    }
+
+    public void setRange(double range) {
+        this.range = range;
     }
 
     public String getUrl() {
@@ -52,6 +62,8 @@ public class Solicitud {
                 ", monto=" + monto +
                 ", cuota=" + cuota +
                 ", tasa_anual_ef=" + tasa_anual_ef +
+                ", range=" + range +
                 '}';
     }
+
 }
